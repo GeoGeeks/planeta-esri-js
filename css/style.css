@@ -1,0 +1,257 @@
+.hljs-comment {
+    color: #898ea4; }
+    .hljs-variable,
+    .hljs-tag,
+    .hljs-regexp,
+    .hljs-name,
+    .ruby .hljs-constant,
+    .xml .hljs-tag .hljs-title,
+    .xml .hljs-pi,
+    .xml .hljs-doctype,
+    .html .hljs-doctype,
+    .css .hljs-id,
+    .css .hljs-class,
+    .css .hljs-pseudo {
+        color: deepskyblue; }
+    .hljs-attribute {
+        color: lightskyblue; }
+    .hljs-number,
+    .hljs-preprocessor,
+    .hljs-built_in,
+    .hljs-literal,
+    .hljs-params,
+    .hljs-constant {
+        color: #c76b29; }
+    .ruby .hljs-class .hljs-title,
+    .css .hljs-rule .hljs-attribute {
+        color: #c08b30; }
+    .hljs-string,
+    .hljs-value,
+    .hljs-inheritance,
+    .hljs-header,
+    .ruby .hljs-symbol,
+    .xml .hljs-cdata {
+        color: darkorange; }
+    .hljs-title,
+    .css .hljs-hexcolor {
+        color: #22a2c9; }
+    .hljs-function,
+    .python .hljs-decorator,
+    .python .hljs-title,
+    .ruby .hljs-function .hljs-title,
+    .ruby .hljs-title .hljs-keyword,
+    .perl .hljs-sub,
+    .javascript .hljs-title,
+    .coffeescript .hljs-title {
+        color: #3d8fd1; }
+    .hljs-keyword,
+    .javascript .hljs-function {
+        color: #6679cc; }
+    .hljs {
+        display: block;
+        overflow-x: auto;
+        /*background: #202746;*/
+        color: #979db4;
+        padding: 0.5em;
+        -webkit-text-size-adjust: none; }
+
+    .coffeescript .javascript,
+    .javascript .xml,
+    .tex .hljs-formula,
+    .xml .javascript,
+    .xml .vbscript,
+    .xml .css,
+    .xml .hljs-cdata {
+        opacity: 0.5; }
+
+
+
+body {
+    font-family: 'Lato', sans-serif;
+    overflow-x: hidden;
+    background-color: #2B2E3B;
+}
+
+.jumbotron {
+    background-color: transparent;
+    height: 100vh; }
+    .hero__title {
+        color: #9FEAF9;
+        text-shadow: 0 4px 3px rgba(0, 0, 0, 0.4),
+        0 8px 13px rgba(0, 0, 0, 0.1),
+        0 18px 23px rgba(0, 0, 0, 0.1);
+    }
+    .hero__text {
+        /*color: #51727D;*/
+        color: #9FEAF9;
+        font-weight: lighter;
+        opacity: 0.8; }
+    .hero__scroll {
+        cursor: pointer;
+        text-transform: uppercase; }
+    .hero__scroll .chevron {
+        display: block;
+        -webkit-animation: pulse 2s infinite;
+        animation: pulse 2s infinite;
+        color: #9FEAF9; }
+
+.chevron::before {
+    border-style: solid;
+    border-width: 0.25em 0.25em 0 0;
+    content: '';
+    display: inline-block;
+    height: 20px;
+    position: relative;
+    -webkit-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    vertical-align: top;
+    width: 20px; }
+    .chevron.right:before {
+        left: 0;
+        -webkit-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+        transform: rotate(45deg); }
+    .chevron.bottom:before {
+        top: 0;
+        -webkit-transform: rotate(135deg);
+        -ms-transform: rotate(135deg);
+        transform: rotate(135deg); }
+    .chevron.left:before {
+        left: 0.25em;
+        -webkit-transform: rotate(-135deg);
+        -ms-transform: rotate(-135deg);
+        transform: rotate(-135deg); }
+    @-webkit-keyframes pulse {
+        0% {
+            -webkit-transform: translate(0, 0);
+            transform: translate(0, 0); }
+        50% {
+            -webkit-transform: translate(0, 10px);
+            transform: translate(0, 10px); }
+        100% {
+            -webkit-transform: translate(0, 0);
+            transform: translate(0, 0); } }
+    @keyframes pulse {
+        0% {
+            -webkit-transform: translate(0, 0);
+            transform: translate(0, 0); }
+        50% {
+            -webkit-transform: translate(0, 10px);
+            transform: translate(0, 10px); }
+        100% {
+            -webkit-transform: translate(0, 0);
+            transform: translate(0, 0); } }
+
+
+.sub-title {
+    text-align: center;
+    /*color: #FFF;*/
+    font-weight: lighter;
+    padding: 30px 0;
+    margin-bottom: 100px;
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    width: 100%;
+    text-shadow: 0 4px 3px rgba(0, 0, 0, 0.4),
+    0 8px 13px rgba(0, 0, 0, 0.1),
+    0 18px 23px rgba(0, 0, 0, 0.1);
+    color: #9FEAF9;
+}
+
+.slide {
+    width: 60%;
+    height: 400px;
+    margin-bottom: 200px;
+    border-radius: 10px;
+    padding: 0 5%;
+    background-color: #2B2E3B;
+    color: white;
+    /*background-color: #0288D1;*/
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    -webkit-box-shadow: 10px 10px 30px -5px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 30px -5px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 30px -5px rgba(0,0,0,0.75);}
+    #arcgis-content .slide {
+        padding: 0;
+        margin-bottom: 300px;}
+    .unit {
+        font-size: 20px;
+    }
+
+cite {
+    font-size: 1.5rem;
+}
+
+h1, h2, h3, h4, h5 {
+    font-weight: lighter;
+}
+
+.facts {
+    border-right: 1px solid rgba(255, 255, 255, 0.75);
+}
+
+.text-emph {
+    color: #9FEAF9;
+}
+
+.nums {
+    text-shadow: 0 4px 3px rgba(0, 0, 0, 0.4),
+    0 8px 13px rgba(0, 0, 0, 0.1),
+    0 18px 23px rgba(0, 0, 0, 0.1);
+    color: #9FEAF9;
+}
+
+.code pre {
+    background: #2B2E3B;
+    padding: 0 5%;
+    text-align: left; }
+
+
+::-webkit-scrollbar {
+    height: 4px;
+    width: 4px; }
+    ::-webkit-scrollbar-track {
+        -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+        -webkit-border-radius: 10px;
+        border-radius: 10px; }
+    ::-webkit-scrollbar-thumb {
+        -webkit-border-radius: 10px;
+        border-radius: 10px;
+        background: #9FEAF9;
+        -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); }
+    ::-webkit-scrollbar-thumb:window-inactive {
+        background: #9FEAF9; }
+
+
+/*.esri-widget__header {*/
+    /*display: none;*/
+/*}*/
+
+#map6 .esri-widget,
+#map6 .esri-widget--button,
+#map7 .esri-widget,
+#map7 .esri-widget--button {
+    background-color: #212121;
+    color: #6DDBFF;
+}
+
+.social i {
+    font-size: 20px;
+    color: #51727D;
+    -moz-transition: all 0.25s;
+    -o-transition: all 0.25s;
+    -webkit-transition: all 0.25s;
+    transition: all 0.25s;
+    text-shadow: 0 4px 3px rgba(0, 0, 0, 0.4),
+    0 8px 13px rgba(0, 0, 0, 0.1),
+    0 18px 23px rgba(0, 0, 0, 0.1);
+}
+
+.social i:hover {
+    color: #6DDBFF;
+}
